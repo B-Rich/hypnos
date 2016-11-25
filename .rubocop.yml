@@ -1,0 +1,15 @@
+AllCops:
+  TargetRubyVersion:
+    2.2
+  Exclude:
+    - Gemfile
+    - Gemfile.lock
+    - bin/*
+    - spec/rails_helper.rb
+    - spec/spec_helper.rb
+
+Documentation:
+  Enabled: false
+
+Metrics/LineLength:
+  Enabled: false

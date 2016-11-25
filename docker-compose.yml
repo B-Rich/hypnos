@@ -1,0 +1,30 @@
+version: '2'
+
+volumes:
+  gems:
+    driver: local
+
+services:
+  test: &base
+    image: icalialabs/hypnos
+    build:
+      context: .
+      dockerfile: dev.Dockerfile
+    command: bundle exec guard start --no-bundler-warning --no-interactions
+    working_dir: /usr/src/app
+    volumes:
+      - .:/usr/src/app
+      - gems:/usr/local/bundle
+    stdin_open: true
+    tty: true
+
+  app:
+    <<: *base
+    ports:
+      - 80:80
+      - 8080:8080
+      - 62222:62222
+      - 60001:60001  
+    command: irb
+    env_file:
+      - dev.env
