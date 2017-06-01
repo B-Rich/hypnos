@@ -1,4 +1,5 @@
 require 'hypnos/bot/voice_set'
+require 'hypnos/bot/voice_customization'
 
 module Hypnos
   module Bot
@@ -7,6 +8,12 @@ module Hypnos
         response = get("/voices")
         parsed_response = JSON.parse(response.body)
         Hypnos::Bot::VoiceSet.new(parsed_response)
+      end
+
+      def self.get_a_voice(voice)
+        response = get("/voices/#{voice}")
+        parsed_response = JSON.parse(response.body)
+        Hypnos::Bot::VoiceCustomization.new(parsed_response)
       end
     end
   end
