@@ -1,5 +1,5 @@
-require 'hypnos/bot/voice_set'
-require 'hypnos/bot/voice_customization'
+require 'hypnos/bot/model/voice_set'
+require 'hypnos/bot/model/voice_customization'
 
 module Hypnos
   module Bot

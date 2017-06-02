@@ -1,4 +1,4 @@
-require 'hypnos/bot/supported_features'
+require 'hypnos/bot/model/supported_features'
 
 module Hypnos
   module Bot

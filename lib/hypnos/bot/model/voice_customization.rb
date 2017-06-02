@@ -1,5 +1,5 @@
-require 'hypnos/bot/supported_features'
-require 'hypnos/bot/customization'
+require 'hypnos/bot/model/supported_features'
+require 'hypnos/bot/model/customization'
 
 module Hypnos
   module Bot

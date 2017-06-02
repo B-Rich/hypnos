@@ -1,4 +1,4 @@
-require 'hypnos/bot/voice'
+require 'hypnos/bot/model/voice'
 
 module Hypnos
   module Bot
