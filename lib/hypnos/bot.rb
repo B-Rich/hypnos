@@ -6,5 +6,7 @@ module Hypnos
     extend Olimpo
     autoload :Voices, "hypnos/bot/voices"
     autoload :Synthesize, "hypnos/bot/synthesize"
+    autoload :Pronunciations, "hypnos/bot/pronunciations"
+    autoload :CustomModel, "hypnos/bot/custom_model"
   end
 end
