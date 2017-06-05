@@ -14,7 +14,7 @@ module Hypnos
         @last_modified = attrs["last_modified"]
         @description = attrs["description"]
         @words = []
-        build_words(attrs["words"])
+        build_words(attrs["words"]) if attrs["words"] != nil
       end
 
       def build_words(words)
