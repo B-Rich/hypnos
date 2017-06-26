@@ -1,4 +1,4 @@
-# require 'spec_helper'
+require 'spec_helper'
 
 describe Hypnos::Bot::CustomModel do
   describe '.lists_custom_model' do

@@ -9,7 +9,8 @@ module Hypnos
       end
 
       def self.post_synthesize(text)
-        response = post("/synthesize", query: {Content_Type: "application/json"}, body: {text: text} )
+
+        response = post("/synthesize", headers: { "Content-Type" => "application/json" }, body: { text: text }.to_json )
 
         return response if response.success?
         raise_exception(response.code, response.body)
