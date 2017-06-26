@@ -1,4 +1,4 @@
-require 'spec_helper'
+# require 'spec_helper'
 
 describe Hypnos::Bot::CustomModel do
   describe '.lists_custom_model' do
@@ -34,10 +34,18 @@ class ExampleListsACustomModelResponse
         ]
       }'
   end
+
+  def success?
+    true
+  end
 end
 
 class ExampleCreateACustomModelResponse
   def body
     '{ "customization_id": "string" }'
+  end
+
+  def success?
+    true
   end
 end
