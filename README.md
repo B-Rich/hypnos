@@ -61,6 +61,20 @@ In order to obtain synthesized audio, simply use the `Hypnos::Bot::Synthesize` c
 Hypnos::Bot::Synthesize.get_synthesize("Hello world")
 ```
 
+### Voices
+
+In order to list all the available voices, simply use the `Hypnos::Bot::Voices` class' get_voices method:
+
+```ruby
+Hypnos::Bot::Voices.get_voices()
+```
+In order to list a voice, simply use the `Hypnos::Bot::Voices` class' get_a_voice method:
+
+```ruby
+Hypnos::Bot::Voices.get_a_voice()
+```
+
+
 
 ## Development
 
