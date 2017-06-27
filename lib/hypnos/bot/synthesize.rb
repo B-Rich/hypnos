@@ -9,7 +9,6 @@ module Hypnos
       end
 
       def self.post_synthesize(text)
-
         response = post("/synthesize", headers: { "Content-Type" => "application/json" }, body: { text: text }.to_json )
 
         return response if response.success?
